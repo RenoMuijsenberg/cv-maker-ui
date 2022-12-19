@@ -7,6 +7,11 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  overflow: hidden;
+
+  .introText {
+    text-align: center;
+  }
 
   .hamburger {
     position: absolute;
@@ -16,7 +21,8 @@
   }
 
   .userImage {
-    margin: 1.5em 5em;
+    margin-top: 1.5em;
+    margin-bottom: -10px;
     object-fit: contain;
     height: 400px;
     z-index: 1;

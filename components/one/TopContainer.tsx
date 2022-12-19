@@ -11,9 +11,9 @@ export const TopContainer = ({image, name}: {image: string, name: string}) => {
                 <Hamburger/>
             </div>
             <img className={styles.userImage} src={image} alt={`Image of ${name}`}/>
-            <div>
+            <div className={styles.introText}>
                 <p className={text.headTextL}>{name}</p>
-                <Socials />
+                <p className={text.headTextM}>Software developer</p>
             </div>
             <DiagonalLine reverse={true} absolute={true}/>
         </div>

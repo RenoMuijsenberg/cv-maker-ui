@@ -1,6 +1,12 @@
 .headTextL {
   font-size: 2em;
   font-weight: bold;
+  color: var(--text-color-secondary);
+}
+
+.headTextM {
+  font-size: 1.5em;
+  color: var(--text-color-secondary);
 }
 
 .boldTextMPrimary {
@@ -16,5 +22,5 @@
 
 .normalTextSDescription {
   font-size: 1em;
-  color: #8e8b8b;
+  color: var(--accent-color);
 }
