@@ -1,0 +1,15 @@
+.social {
+  margin: 1em 0;
+  font-size: 1em;
+  text-align: center;
+  .link {
+    color: var(--text-color-secondary);
+    &:hover {
+      color: var(--accent-color);
+    }
+  }
+  .icon {
+    margin: 0 .5em;
+    font-size: 1.5em;
+  }
+}

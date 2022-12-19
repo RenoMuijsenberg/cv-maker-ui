@@ -1,0 +1,46 @@
+.container {
+  height: 100%;
+  width: 100%;
+}
+
+.topContainer {
+  position: relative;
+  background: var(--background-secondary);
+  color: var(--text-color-secondary);
+  width: 100%;
+  min-height: 20em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  .userImage {
+    margin: 1.5em 5em;
+    object-fit: contain;
+    height: 400px;
+    z-index: 1;
+  }
+}
+
+.timeLineContainer {
+  position: relative;
+}
+
+.descriptionContainer {
+  position: relative;
+  width: 100%;
+  .description {
+    background: var(--background-secondary);
+    min-height: 20em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    .descriptionText {
+      width: 60%;
+    }
+  }
+}
+
+
+
+
