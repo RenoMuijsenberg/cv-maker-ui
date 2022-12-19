@@ -1,5 +1,5 @@
 import classNames from "classnames";
-import styles from "../styles/components/Socials.module.scss";
+import styles from "../../styles/components/One/Socials.module.scss";
 import Link from "next/link";
 
 export const Socials = () => {

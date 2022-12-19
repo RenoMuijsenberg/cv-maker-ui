@@ -1,0 +1,15 @@
+.descriptionContainer {
+  position: relative;
+  width: 100%;
+  .description {
+    background: var(--background-secondary);
+    min-height: 20em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    .descriptionText {
+      width: 60%;
+    }
+  }
+}

@@ -1,0 +1,24 @@
+.topContainer {
+  position: relative;
+  background: var(--background-secondary);
+  color: var(--text-color-secondary);
+  width: 100%;
+  min-height: 20em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  .hamburger {
+    position: absolute;
+    z-index: 2;
+    left: 1em;
+    top: 1em;
+  }
+
+  .userImage {
+    margin: 1.5em 5em;
+    object-fit: contain;
+    height: 400px;
+    z-index: 1;
+  }
+}

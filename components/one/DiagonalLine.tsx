@@ -1,4 +1,4 @@
-import styles from "../styles/components/DiagonalLine.module.scss"
+import styles from "../../styles/components/One/DiagonalLine.module.scss"
 import classNames from "classnames";
 export const DiagonalLine = ({reverse, absolute}: {reverse: boolean, absolute: boolean}) => {
 	return (
