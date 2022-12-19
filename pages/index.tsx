@@ -53,7 +53,10 @@ export default function Index() {
         },
     ])
 
-    const [description, setDescription] = useState("Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum")
+    const birthDate = new Date("2002-04-15");
+    const now = new Date();
+
+    const [description, setDescription] = useState(`Mijn naam is Reno Muijsenberg en ik ben ${Math.abs(now.getFullYear() - birthDate.getFullYear())} jaar oud. Momenteel zit ik op het Fontys in Eindhoven en ben ik aan het leren voor software developer. Sinds vroeger ben ik al veel bezig geweest met computers en hieraan sleutelen, zo vond ik het toen al leuk om te kijken waar mijn oma's Windows XP computer toe in staat was en wat ik hierop kon doen. In mijn vrije tijd ben ik vaak met vrienden, in de sportschool of bezig met computers.`)
 
     useEffect(() => {
         document.documentElement.style.setProperty('--background-primary', '#ffffff');
