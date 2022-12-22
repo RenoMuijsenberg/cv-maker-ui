@@ -1,3 +1,16 @@
 .footerContainer {
   background: var(--background-secondary);
+  min-height: 9em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  .link {
+    margin: .75em;
+    color: var(--text-color-secondary);
+    text-decoration: none;
+    &:hover {
+      color: var(--accent-color);
+    }
+  }
 }

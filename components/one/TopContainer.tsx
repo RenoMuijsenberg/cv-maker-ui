@@ -4,7 +4,7 @@ import {Socials} from "./Socials";
 import {DiagonalLine} from "./DiagonalLine";
 import {Divide, Divide as Hamburger} from 'hamburger-react'
 
-export const TopContainer = ({image, name}: {image: string, name: string}) => {
+export const TopContainer = ({image, name, profession}: {image: string, name: string, profession: string}) => {
     return (
         <div className={styles.topContainer}>
             <div className={styles.hamburger}>
@@ -13,7 +13,7 @@ export const TopContainer = ({image, name}: {image: string, name: string}) => {
             <img className={styles.userImage} src={image} alt={`Image of ${name}`}/>
             <div className={styles.introText}>
                 <p className={text.headTextL}>{name}</p>
-                <p className={text.headTextM}>Software developer</p>
+                <p className={text.headTextM}>{profession}</p>
             </div>
             <DiagonalLine reverse={true} absolute={true}/>
         </div>

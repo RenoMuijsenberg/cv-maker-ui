@@ -9,6 +9,7 @@ import {FooterContainer} from "../components/one/FooterContainer";
 export default function Index() {
     const [name, setName] = useState("Reno Muijsenberg")
     const [image, setImage] = useState("/images/franco.png")
+    const [profession, setProfession] = useState("Software developer")
     const [timeLine, setTimeLine] = useState<object[]>([
         {
             name: "Fontys Eindhoven",
@@ -69,7 +70,7 @@ export default function Index() {
     return (
         <>
             {/*Container that displays quickly who you are*/}
-            <TopContainer image={image} name={name} />
+            <TopContainer image={image} name={name} profession={profession}/>
 
             {/*Container that displays information about jobs/school in timeline*/}
             <TimeLineContainer timeLine={timeLine} />
