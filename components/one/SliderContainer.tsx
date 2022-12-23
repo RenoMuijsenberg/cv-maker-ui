@@ -29,9 +29,11 @@ export const SliderContainer = ({projectImages}: {projectImages: any}) => {
     };
 
     return (
+
         <div className={styles.sliderContainer}>
             <Slider {...settings}>
                 {
+                    projectImages.length > 0 &&
                     projectImages.map((item: any, key: number) => {
                         return (
                             <div key={key}>

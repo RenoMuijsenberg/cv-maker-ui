@@ -5,6 +5,7 @@ export const TimeLineContainer = ({timeLine}: {timeLine: object[]}) => {
     return (
         <div className={styles.timeLineContainer}>
             {
+                timeLine.length > 0 &&
                 timeLine.map((item: object, key: number) => {
                     return <TimeLine key={key} item={item} />
                 })
