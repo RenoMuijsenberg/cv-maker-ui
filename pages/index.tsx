@@ -15,12 +15,8 @@ export const getServerSideProps = async () => {
                 user: user
             }
         }
-    } catch {
-        return {
-            redirect: {
-                destination: "/error"
-            }
-        }
+    } catch(e) {
+        console.log(e)
     }
 }
 
