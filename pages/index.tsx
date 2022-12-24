@@ -5,6 +5,7 @@ import {MiddleContainer} from "../components/one/MiddleContainer";
 import {SliderContainer} from "../components/one/SliderContainer";
 import {FooterContainer} from "../components/one/FooterContainer";
 import {getUser} from "../prisma/user";
+import {IUser} from "../interfaces/IUser";
 
 export const getServerSideProps = async () => {
     try {
@@ -21,10 +22,7 @@ export const getServerSideProps = async () => {
 }
 
 
-export default function Index({user}: {user: any}) {
-    const [timeLine, setTimeLine] = useState<object[]>([])
-    const [projectImages, setProjectImages] = useState<object[]>([])
-
+export default function Index({user}: {user: IUser}) {
     useEffect(() => {
         document.documentElement.style.setProperty('--background-primary', '#ffffff');
         document.documentElement.style.setProperty('--background-secondary', '#034096');
@@ -39,13 +37,13 @@ export default function Index({user}: {user: any}) {
             <TopContainer image={user.image} name={user.name} profession={user.profession}/>
 
             {/*Container that displays information about jobs/school in timeline*/}
-            <TimeLineContainer timeLine={timeLine} />
+            <TimeLineContainer timeLine={user.timeline} />
 
             {/*Container that displays information about person*/}
             <MiddleContainer description={user.description} />
 
             {/*Container that displays projects you made*/}
-            <SliderContainer projectImages={projectImages}/>
+            <SliderContainer projectImages={user.project}/>
 
             {/*Container that display information like you contact information*/}
             <FooterContainer />
