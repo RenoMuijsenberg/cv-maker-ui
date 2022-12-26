@@ -37,3 +37,13 @@
     }
   }
 }
+
+@media screen and (max-width: 480px) {
+  .topContainer {
+    .hamburger {
+      left: .65em;
+      top: .65em;
+    }
+  }
+
+}

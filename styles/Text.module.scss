@@ -24,3 +24,14 @@
   font-size: 1em;
   color: var(--accent-color);
 }
+
+//Text settings for mobile devices
+@media screen and (max-width: 480px) {
+  .headTextL {
+    font-size: 1.5em;
+  }
+
+  .headTextM {
+    font-size: 1.1em;
+  }
+}
