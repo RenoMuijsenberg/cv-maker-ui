@@ -8,14 +8,6 @@ export const TimeLine = ({
 }: {
 	item: any
 }) => {
-	const [animate, setAnimate] = useState(false);
-
-	useEffect(() => {
-		setAnimate(true);
-	}, [])
-
-
-
 	return (
 		<div className={styles.timeLineContainer}>
 			<div className={styles.timeLineContainer}>
