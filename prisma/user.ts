@@ -9,7 +9,11 @@ export const getUser = async (id: string) => {
 		where: {id},
 		include: {
 			project: true,
-			timeline: true
+			timeline: {
+				orderBy: {
+					time: 'desc'
+				}
+			}
 		}
 	})
 }

@@ -9,6 +9,11 @@
   color: var(--text-color-secondary);
 }
 
+.headTextS {
+  font-size: clamp(0.8em, 1.1vw, 1.1em);
+  color: var(--text-color-secondary);
+}
+
 .boldTextMPrimary {
   font-size: clamp(1.1em, 1.5vw, 1.5em);
   font-weight: 500;

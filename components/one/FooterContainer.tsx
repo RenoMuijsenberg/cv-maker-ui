@@ -10,7 +10,7 @@ export const FooterContainer = () => {
             <DiagonalLine reverse={false} absolute={false} />
             <div className={styles.footerContainer}>
                 <Socials />
-                <Link className={styles.link} href={"mailto:Renomuis12@gmail.com"}>RenoMuis12@gmail.com</Link>
+                <Link className={styles.link} href={"mailto:Renomuis12@gmail.com"}>Renomuis12@gmail.com</Link>
                 <p className={text.normalTextSDescription}>©Reno Muijsenberg</p>
             </div>
         </>

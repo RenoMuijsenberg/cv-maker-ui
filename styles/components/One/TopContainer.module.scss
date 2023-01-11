@@ -1,3 +1,23 @@
+.menu {
+  position: fixed;
+  left: -20em;
+  top: 0;
+  height: 100%;
+  width: 20em;
+  background: white;
+  z-index: 2;
+  transition: left .3s;
+}
+
+.menuOpen {
+  left: 0;
+  transition: left .3s;
+}
+
+.fixed {
+  position: fixed!important;
+}
+
 .topContainer {
   position: relative;
   background: var(--background-secondary);
@@ -15,7 +35,7 @@
 
   .hamburger {
     position: absolute;
-    z-index: 2;
+    z-index: 3;
     left: 1em;
     top: 1em;
   }
