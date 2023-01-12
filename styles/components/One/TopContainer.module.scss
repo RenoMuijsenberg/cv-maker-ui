@@ -5,8 +5,28 @@
   height: 100%;
   width: 20em;
   background: white;
-  z-index: 2;
+  z-index: 3;
   transition: left .3s;
+  padding: 4em 1em;
+  ul {
+    padding: 0 1em;
+    li {
+      font-weight: bold;
+      font-size: 20px;
+      list-style: none;
+      padding: .75em 0;
+      background: linear-gradient(to left, white 50%, rgba(0, 184, 212, .1) 50%) right;
+      background-size: 200%;
+      transition: .3s ease-in;
+      &:hover {
+        background-position: left;
+        cursor: pointer;
+      }
+    }
+    hr {
+      margin: 0;
+    }
+  }
 }
 
 .menuOpen {

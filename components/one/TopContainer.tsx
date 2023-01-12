@@ -17,7 +17,14 @@ export const TopContainer = ({image, name, profession}: {image: string, name: st
         <>
             {/*Menu*/}
             <div className={classNames(styles.menu, isOpen && styles.menuOpen)}>
-
+                <ul>
+                    <li>Over mij</li>
+                    <hr/>
+                    <li>Projecten</li>
+                    <hr/>
+                    <li>Skills</li>
+                    <hr/>
+                </ul>
             </div>
 
             {/*Header*/}
