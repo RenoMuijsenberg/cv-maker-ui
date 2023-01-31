@@ -4,6 +4,8 @@ import {DiagonalLine} from "./DiagonalLine";
 import {Divide as Hamburger} from 'hamburger-react'
 import {useEffect, useState} from "react";
 import classNames from "classnames";
+import {Socials} from "./Socials";
+import Link from "next/link";
 
 export const TopContainer = ({image, name, profession}: {image: string, name: string, profession: string}) => {
     const [isOpen, setIsOpen] = useState(false);
@@ -25,6 +27,12 @@ export const TopContainer = ({image, name, profession}: {image: string, name: st
                     <li>Skills</li>
                     <hr/>
                 </ul>
+
+                <div className={styles.menuSocials}>
+                    <Socials />
+                    <Link className={styles.link} href={"mailto:Renomuis12@gmail.com"}>Renomuis12@gmail.com</Link>
+                    <p className={classNames(text.normalTextSDescription, styles.copyRight)}>©Reno Muijsenberg</p>
+                </div>
             </div>
 
             {/*Header*/}

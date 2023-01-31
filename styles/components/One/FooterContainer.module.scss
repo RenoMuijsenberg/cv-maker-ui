@@ -6,9 +6,9 @@
   align-items: center;
   flex-direction: column;
   .link {
-    margin: .75em;
     color: var(--text-color-secondary);
     text-decoration: none;
+    margin-bottom: .75em;
     &:hover {
       color: var(--accent-color);
     }
