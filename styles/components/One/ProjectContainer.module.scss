@@ -6,10 +6,10 @@
 .projectContainer {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
-  height: auto;
+  justify-content: space-evenly;
   .project {
-    width: 31.5%;
+    width: 30%;
+    font-size: 30%;
     margin: 1em;
     .projectImage {
       position: relative;
