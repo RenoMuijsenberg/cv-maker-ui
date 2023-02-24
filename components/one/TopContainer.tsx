@@ -10,21 +10,16 @@ import Link from "next/link";
 export const TopContainer = ({image, name, profession}: {image: string, name: string, profession: string}) => {
     const [isOpen, setIsOpen] = useState(false);
 
-    useEffect(() => {
-        //Open menu here?
-        console.log(isOpen)
-    }, [isOpen])
-
     return (
         <>
             {/*Menu*/}
             <div className={classNames(styles.menu, isOpen && styles.menuOpen)}>
                 <ul>
-                    <li>Over mij</li>
+                    <Link href={"/"}><li>Home</li></Link>
                     <hr/>
-                    <li>Projecten</li>
+                    <Link href={"/projecten"}><li>Projecten</li></Link>
                     <hr/>
-                    <li>Skills</li>
+                    <Link href={"/skills"}><li>Skills</li></Link>
                     <hr/>
                 </ul>
 
