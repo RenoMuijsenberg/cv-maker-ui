@@ -9,7 +9,6 @@
   justify-content: space-evenly;
   .project {
     width: 30%;
-    font-size: 30%;
     margin: 1em;
     .projectImage {
       position: relative;
@@ -17,6 +16,7 @@
       overflow: hidden;
       img {
         width: 100%;
+        height: 100%;
         object-fit: cover;
       }
     }

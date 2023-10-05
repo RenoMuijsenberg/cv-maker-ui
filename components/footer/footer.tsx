@@ -1,10 +1,10 @@
-import {DiagonalLine} from "./DiagonalLine";
-import styles from "../../styles/components/One/FooterContainer.module.scss"
+import DiagonalLine from "../diagonalline/diagonalline";
+import styles from "./footer.module.scss"
 import text from "../../styles/Text.module.scss"
-import {Socials} from "./Socials";
+import Socials from "../socials/socials";
 import Link from "next/link";
 
-export const FooterContainer = () => {
+export default function Footer() {
     return (
         <>
             <DiagonalLine reverse={false} absolute={false} />

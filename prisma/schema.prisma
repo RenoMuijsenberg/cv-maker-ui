@@ -17,14 +17,14 @@ model User {
   image       String
   profession  String
   description String
-  timeline    TimeLine[]
+  timeline    Timeline[]
   project     Project[]
   birthDate   String
 
   @@map("users")
 }
 
-model TimeLine {
+model Timeline {
   id     String  @id @default(auto()) @map("_id") @db.ObjectId
   name   String
   time   String

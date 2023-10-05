@@ -1,13 +1,13 @@
-import styles from "../../styles/components/One/TopContainer.module.scss";
+import styles from "./topcontainer.module.scss";
 import text from "../../styles/Text.module.scss";
-import {DiagonalLine} from "./DiagonalLine";
+import DiagonalLine from "../diagonalline/diagonalline";
 import {Divide as Hamburger} from 'hamburger-react'
-import {useEffect, useState} from "react";
+import {useState} from "react";
 import classNames from "classnames";
-import {Socials} from "./Socials";
+import Socials from "../socials/socials";
 import Link from "next/link";
 
-export const TopContainer = ({image, name, profession}: {image: string, name: string, profession: string}) => {
+export default function TopContainer({image, name, profession}: {image: string, name: string, profession: string}) {
     const [isOpen, setIsOpen] = useState(false);
 
     return (
