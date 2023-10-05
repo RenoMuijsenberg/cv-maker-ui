@@ -1,9 +1,9 @@
-import styles from "../../styles/components/One/MiddleContainer.module.scss";
+import styles from "./middlecontainer.module.scss";
 import text from "../../styles/Text.module.scss";
-import {DiagonalLine} from "./DiagonalLine";
+import DiagonalLine from "../diagonalline/diagonalline";
 import classNames from "classnames";
 
-export const MiddleContainer = ({description}: {description: string}) => {
+export default function MiddleContainer({description}: {description: string}) {
     return (
         <div className={styles.descriptionContainer}>
             <DiagonalLine reverse={false} absolute={false}/>

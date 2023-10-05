@@ -1,0 +1,35 @@
+.projectTitle {
+  margin: .25em .5em;
+  text-align: center;
+}
+
+.projectContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  .project {
+    width: 30%;
+    margin: 1em;
+    .projectImage {
+      position: relative;
+      max-height: 350px;
+      overflow: hidden;
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+    .projectDesc {
+      background-color: rgba(0,0,0,0.4);
+      width: 100%;
+      position: absolute;
+      text-align: center;
+      bottom: 0;
+      color: var(--text-color-secondary);
+      h2 {
+        margin: .5em;
+      }
+    }
+  }
+}

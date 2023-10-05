@@ -8,7 +8,16 @@
     width: 100%;
     display: flex;
     .timeLineTextPadding {
+      width: 100%;
       padding: 2em;
+    }
+    .animateLeft {
+      animation-name: left-to-right;
+      animation-duration: 1s;
+    }
+    .animateRight {
+      animation-name: right-to-left;
+      animation-duration: 1s;
     }
     .leftTimeLineContainer {
       text-align: right;
@@ -21,4 +30,14 @@
       width: 50%;
     }
   }
+}
+
+@keyframes left-to-right {
+  from {transform: translateX(-100%);}
+  to {transform: translateX(0)}
+}
+
+@keyframes right-to-left {
+  from {transform: translateX(100%);}
+  to {transform: translateX(0)}
 }
