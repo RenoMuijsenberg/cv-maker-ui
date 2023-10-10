@@ -4,6 +4,13 @@
   display: flex;
   flex-direction: column;
   position: relative;
+  align-items: center;
+  .heading {
+    text-align: center;
+    padding-bottom: 1em;
+    border-bottom: 3px solid;
+    width: 30%;
+  }
   .timeLineItem {
     width: 100%;
     display: flex;

@@ -10,8 +10,12 @@ export const getUser = async (id: string) => {
 		include: {
 			project: true,
 			timeline: {
-				orderBy: {
-					time: 'desc'
+				include: {
+					timelineitem: {
+						orderBy: {
+							time: 'desc'
+						}
+					}
 				}
 			}
 		}

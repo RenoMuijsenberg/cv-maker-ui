@@ -6,6 +6,7 @@ import {useState} from "react";
 import classNames from "classnames";
 import Socials from "../socials/socials";
 import Link from "next/link";
+import {TypeAnimation} from "react-type-animation";
 
 export default function TopContainer({image, name, profession}: {image: string, name: string, profession: string}) {
     const [isOpen, setIsOpen] = useState(false);
@@ -44,8 +45,17 @@ export default function TopContainer({image, name, profession}: {image: string, 
                 </div>
                 <img className={styles.userImage} src={image} alt={`Image of ${name}`}/>
                 <div className={styles.introText}>
-                    <p className={text.headTextL}>{name}</p>
-                    <p className={text.headTextM}>{profession}</p>
+                    <h1 className={text.headTextL}>{name}</h1>
+                    <TypeAnimation
+                        className={text.headTextM}
+                        sequence={[
+                            profession + " ",
+                            2000,
+                            "HBO-ICT ",
+                            2000
+                        ]}
+                        speed={50}
+                        repeat={Infinity}/>
                 </div>
                 <DiagonalLine reverse={true} absolute={true}/>
             </div>

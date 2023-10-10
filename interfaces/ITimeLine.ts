@@ -1,6 +1,6 @@
+import {ITimeLineItem} from "./ITimeLineItem";
+
 export interface ITimeLine {
-	name: string
-	time: string
-	grade: string
-	course: string
+	title: string
+	timelineitem: ITimeLineItem[]
 }
