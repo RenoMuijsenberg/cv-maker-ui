@@ -8,6 +8,7 @@ export default function MiddleContainer({description}: {description: string}) {
         <div className={styles.descriptionContainer}>
             <DiagonalLine reverse={false} absolute={false}/>
             <div className={styles.description}>
+                <h2 className={text.headTextM}>Over Mezelf</h2>
                 <p className={classNames(styles.descriptionText, text.normalTextSSecondary)}>{description}</p>
             </div>
             <DiagonalLine reverse={true} absolute={false}/>

@@ -10,6 +10,9 @@ export const getUser = async (id: string) => {
 		include: {
 			project: true,
 			timeline: {
+				orderBy: {
+					order: 'desc' // Specify 'desc' for descending order
+				},
 				include: {
 					timelineitem: {
 						orderBy: {

@@ -6,10 +6,11 @@
   position: relative;
   align-items: center;
   .heading {
+    margin-top: 1em;
     text-align: center;
     padding-bottom: 1em;
     border-bottom: 3px solid;
-    width: 30%;
+    width: 35%;
   }
   .timeLineItem {
     width: 100%;
@@ -47,4 +48,20 @@
 @keyframes right-to-left {
   from {transform: translateX(100%);}
   to {transform: translateX(0)}
+}
+
+@media screen and (max-width: 1028px){
+  .timeLineContainer {
+    .heading {
+      width: 45%;
+    }
+  }
+}
+
+@media screen and (max-width: 768px){
+  .timeLineContainer {
+    .heading {
+      width: 55%;
+    }
+  }
 }

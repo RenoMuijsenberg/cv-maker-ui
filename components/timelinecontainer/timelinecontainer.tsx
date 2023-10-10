@@ -5,7 +5,7 @@ import {ITimeLineItem} from "../../interfaces/ITimeLineItem";
 
 export default function TimelineContainer ({timeLine}: {timeLine: ITimeLine[]}) {
     return (
-        <>
+        <div className={styles.timeLinePage}>
             {
                 timeLine.map((value: ITimeLine, key: number) => (
                     <div className={styles.timeLineContainer} key={key}>
@@ -19,6 +19,6 @@ export default function TimelineContainer ({timeLine}: {timeLine: ITimeLine[]}) 
                     </div>
                 ))
             }
-        </>
+        </div>
     )
 }
